@@ -1,12 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "indieband_db";
+
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli('indieband', 'root', '', 'indieband_db');
 
 // Check connection
 if ($conn->connect_error) {
