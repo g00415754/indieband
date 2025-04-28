@@ -2,7 +2,7 @@
 session_start();
 
 // Database Connection
-$conn = new mysqli('localhost', 'root', 'root', 'indieband_db');
+$conn = new mysqli('indieband', 'root', '', 'indieband_db');
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
