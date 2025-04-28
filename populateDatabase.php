@@ -8,13 +8,10 @@
 <body>
 
     <?php
-    $servername = "localhost"; // Correct server
-    $username = "root"; // Default username for MAMP
-    $password = "root"; // Default password for MAMP
-    $dbname = "indieband_db";
+
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli('indieband', 'root', '', 'indieband_db');
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
