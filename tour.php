@@ -90,7 +90,7 @@
     <div class="container my-4">
         <h1 class="lacquer-regular">Find a Tour Date Near You</h1>
         <?php
-        $conn = new mysqli('localhost', 'root', 'root', 'indieband_db');
+        $conn = new mysqli('indieband', 'root', '', 'indieband_db');
         if ($conn->connect_error) {
             die('Connection failed: ' . $conn->connect_error);
         }
