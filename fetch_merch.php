@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli("localhost", "root", "root", "indieband_db");
+$conn = new mysqli('indieband', 'root', '', 'indieband_db');
 
 if ($conn->connect_error) {
     die(json_encode(['error' => 'Database connection failed']));
